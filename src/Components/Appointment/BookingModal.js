@@ -35,7 +35,7 @@ const BookingModal = ({ treatment, date, setTreatment, refetch }) => {
             .then(res => res.json())
             .then(data => {
                 if (data.success) {
-                    toast(`Your appointment is set ${formateDate} at ${slot}`)
+                    toast.success(`Your appointment is set ${formateDate} at ${slot}`)
                 }
                 else {
                     toast.error(`Already have an appointment on ${data.bookingInfo?.date} at ${data.bookingInfo?.slot}`)
@@ -63,7 +63,7 @@ const BookingModal = ({ treatment, date, setTreatment, refetch }) => {
                         </select>
                         <input type="text" name="name" disabled value={user?.displayName} className="input input-bordered input-accent w-full max-w-xs font-bold" />
                         <input type="text" name="email" disabled value={user?.email} className="input input-bordered input-accent w-full max-w-xs font-bold" />
-                        <input type="text" name="number" placeholder="Phone number" className="input input-bordered input-accent w-full max-w-xs font-bold" />
+                        <input type="text" name="number" placeholder="Phone number" className="input input-bordered input-accent w-full max-w-xs font-bold" required />
                         <input type="submit" value="submit" className="btn btn-accent text-white font-bold w-full max-w-xs" />
                     </form>
                 </div>

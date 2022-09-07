@@ -34,7 +34,7 @@ const MyAppointment = () => {
                 {/*---------------------Dashboard of user------------------*/}
                 <tbody>
                     {
-                        appointment.map((a, index) => <tr className='hover'>
+                        appointment.map((a, index) => <tr className='hover' key={a._id}>
                             <th>{index + 1}</th>
                             <td>{a.patientName}</td>
                             <td>{a.date}</td>

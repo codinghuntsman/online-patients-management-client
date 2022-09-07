@@ -21,6 +21,9 @@ const Navbar = () => {
         {
             user && <li><Link to="/dashboard">Dashboard</Link></li>
         }
+        {
+            user && <li className='text-sm flex justify-center items-center font-sans text-white'>{user.displayName}</li>
+        }
 
         {/*---------------------------Logout method------------------------------ */}
         <li>{user ? <button className="btn btn-ghost text-pink-500 font-bold" onClick={logout}>Log Out</button>
@@ -39,7 +42,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <Link to='/' className="btn btn-ghost uppercase 
-                font-serif font-bold text-sm lg:text-2xl hover:rounded-full">Doctor Portal</Link>
+                font-serif font-bold text-sm lg:text-2xl hover:rounded-full">Doctors Portal</Link>
             </div>
             <div className="navbar-end hidden lg:flex lg:justify-around md:w-60 w-full h-28">
                 <ul className="menu menu-horizontal p-0 font-bold font-serif text-black">

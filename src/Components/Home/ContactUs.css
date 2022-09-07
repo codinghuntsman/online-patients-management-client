@@ -1,0 +1,16 @@
+.ContactUs {
+    width: 0ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: ContactUs 3s infinite;
+}
+
+@keyframes ContactUs {
+    0% {
+        width: 0ch;
+    }
+
+    50% {
+        width: 9ch;
+    }
+}

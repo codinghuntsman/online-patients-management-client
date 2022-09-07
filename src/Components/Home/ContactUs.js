@@ -1,4 +1,5 @@
 import React from 'react';
+import './ContactUs.css';
 import appointment from '../../assets/images/appointment.png';
 
 const ContactUs = () => {
@@ -6,8 +7,8 @@ const ContactUs = () => {
         <section style={{ background: `url(${appointment})`, backgroundSize: "cover" }}>
             <div className="hero mt-32">
                 <div className="hero-content flex-col">
-                    <p className='text-accent font-sans font-bold text-3xl bg-clip-text'>Contact us</p>
-                    <h1 className=' font-sans font-bold text-xl lg:text-4xl text-white bg-clip-text'>Stay connected with us</h1>
+                    <p className='ContactUs text-accent font-sans font-bold text-3xl bg-clip-text'>Contact us</p>
+                    <h1 className='font-sans font-bold text-xl lg:text-4xl text-white bg-clip-text'>Stay connected with us</h1>
                     <div className="card w-full h-100 shadow-2xl bg-base-100">
                         <div className="card-body">
                             <div className="form-control">

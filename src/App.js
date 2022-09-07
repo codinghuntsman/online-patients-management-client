@@ -12,10 +12,14 @@ import Review from './Components/Review/Review';
 import Dashboard from './Components/Dashboard/Dashboard';
 import MyAppointment from './Components/Dashboard/MyAppointment';
 import MyReview from './Components/Dashboard/MyReview';
+import MyHistory from './Components/Dashboard/MyHistory';
+import AllUsers from './Components/Dashboard/AllUsers';
 
 //--------------React toast--------------
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import AddDoctor from './Components/Dashboard/AddDoctor';
+import ManageDoctor from './Components/Dashboard/ManageDoctor';
 
 function App() {
   return (
@@ -28,13 +32,14 @@ function App() {
             <Appointment />
           </RequireAuth>
         }></Route>
-        <Route path='/dashboard' element={
-          <RequireAuth>
-            <Dashboard />
-          </RequireAuth>
-        }>
+        <Route path='/dashboard' element={<RequireAuth> <Dashboard /></RequireAuth>}>
+
           <Route index element={<MyAppointment />}></Route>
           <Route path='/dashboard/review' element={<MyReview />}></Route>
+          <Route path='/dashboard/history' element={<MyHistory />}></Route>
+          <Route path='/dashboard/users' element={<AllUsers />}></Route>
+          <Route path='/dashboard/addDoctor' element={<AddDoctor />}></Route>
+          <Route path='/dashboard/ManageDoctor' element={<ManageDoctor />}></Route>
 
         </Route>
         <Route path='/review' element={<Review />}></Route>
