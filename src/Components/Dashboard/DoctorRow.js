@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const DoctorRow = ({ doctor, index, refetch, setDeletingDoctor }) => {
+const DoctorRow = ({ doctor, index, setDeletingDoctor }) => {
     const { img, name, specialty } = doctor;
 
     return (

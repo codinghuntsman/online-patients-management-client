@@ -11,7 +11,7 @@ const Service = ({ service }) => {
                 <h2 className="card-title font-bold font-sans">{name}</h2>
                 <p className='text-justify font-bold font-serif'>{description}</p>
                 <div className="card-actions">
-                    <button className="btn btn-wide btn-outline btn-accent uppercase font-bold rounded-full font-sans hover:font-serif">See more</button>
+                    <button className="btn btn-wide lg:btn-wide btn-outline btn-accent uppercase font-bold rounded-full font-sans hover:font-serif">See more</button>
                 </div>
             </div>
         </div>

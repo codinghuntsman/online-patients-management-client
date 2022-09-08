@@ -18,7 +18,7 @@ const ManageDoctor = () => {
         <div className='pl-10'>
             <h5 className="text-2xl font-bold font-sans">Manage Doctors {doctors.length}</h5>
             <div class="overflow-x-auto">
-                <table class="table w-full">
+                <table class="table table-normal w-full">
 
                     <thead>
                         <tr>

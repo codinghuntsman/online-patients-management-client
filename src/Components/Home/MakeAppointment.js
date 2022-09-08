@@ -7,7 +7,7 @@ const Appointment = () => {
     return (
         <section
             style={{ background: `url(${appointment})`, backgroundSize: "cover" }}>
-            <div className='card lg:card-side flex lg:justify-center lg:items-center mt-36 px-10 h-[700px] md:h-[950px] lg:h-[550px]'>
+            <div className='card lg:card-side flex lg:justify-center lg:items-center mt-30 px-10 h-[750px] md:h-[950px] lg:h-[550px]'>
                 <div className='flex-1'>
                     <img className='lg:mt-60' src={doctor} alt="doctor" />
                 </div>
