@@ -9,7 +9,7 @@ const ManageDoctor = () => {
 
     const [deletingDoctor, setDeletingDoctor] = useState(null);
 
-    const { data: doctors, isLoading, refetch } = useQuery('doctors', () => fetch('http://localhost:5000/doctor').then(res => res.json()));
+    const { data: doctors, isLoading, refetch } = useQuery('doctors', () => fetch('https://safe-falls-27408.herokuapp.com/doctor').then(res => res.json()));
 
     if (isLoading) {
         return <Loading></Loading>

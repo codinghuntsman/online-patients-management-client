@@ -42,7 +42,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <Link to='/' className="btn btn-ghost uppercase 
-                font-serif font-bold text-sm lg:text-2xl hover:rounded-full">Doctors Portal</Link>
+                font-serif font-bold text-[9px] lg:text-[15px] hover:rounded-full hover:text-white">Online Management system for Patients</Link>
             </div>
             <div className="navbar-end hidden lg:flex lg:justify-around md:w-60 w-full h-28">
                 <ul className="menu menu-horizontal p-0 font-bold font-serif text-black">

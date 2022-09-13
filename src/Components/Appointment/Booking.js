@@ -12,7 +12,7 @@ const Booking = ({ date }) => {
 
     //--------------------Usage of react query-------------------
     const { data: services, isLoading, refetch } = useQuery(["available", formateDate], () =>
-        fetch(`http://localhost:5000/available?date=${formateDate}`)
+        fetch(`https://safe-falls-27408.herokuapp.com/available?date=${formateDate}`)
             .then(res => res.json()));
 
     if (isLoading) {
@@ -24,7 +24,7 @@ const Booking = ({ date }) => {
     //---------------Usage of use state-------------------------
     // const [services, setServices] = useState([]);
     // useEffect(() => {
-    //     fetch(`http://localhost:5000/available?date=${formateDate}`)
+    //     fetch(`https://safe-falls-27408.herokuapp.com/available?date=${formateDate}`)
     // .then(res => res.json())
     //         .then(data => setServices(data))
     // }, [])

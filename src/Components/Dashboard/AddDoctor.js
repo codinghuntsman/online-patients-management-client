@@ -8,7 +8,7 @@ import Loading from '../Login/Loading';
 const AddDoctor = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
-    const { data: services, isLoading } = useQuery('services', () => fetch('http://localhost:5000/service').then(res => res.json()));
+    const { data: services, isLoading } = useQuery('services', () => fetch('https://safe-falls-27408.herokuapp.com/service').then(res => res.json()));
 
     const imageStorageKeyToImgBB = 'bc233faafc43996dfd29aed162163e8c';
 
@@ -32,7 +32,7 @@ const AddDoctor = () => {
                         img: img
                     };
                     // console.log(doctor);
-                    fetch('http://localhost:5000/doctor', {
+                    fetch('https://safe-falls-27408.herokuapp.com/doctor', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'

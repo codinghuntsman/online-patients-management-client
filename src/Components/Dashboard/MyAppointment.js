@@ -13,7 +13,7 @@ const MyAppointment = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/booking?patientEmail=${user.email}`)
+            fetch(`https://safe-falls-27408.herokuapp.com/booking?patientEmail=${user.email}`)
                 .then(res => res.json())
                 .then(data => setAppointment(data))
         }
